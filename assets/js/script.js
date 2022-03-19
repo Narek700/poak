@@ -99,7 +99,7 @@ $(document).ready(function () {
     })
 
     //menu links click for mobile-tablet
-    $('#nav a').on('click', function (e) {
-        e.preventDefault();
-    });
+    // $('#nav a').on('click', function (e) {
+    //     e.preventDefault();
+    // });
 });

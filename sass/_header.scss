@@ -203,7 +203,6 @@
     nav {
       a {
         display: flex;
-        gap: 10px;
         align-items: center;
         padding: 0 14px;
         font-size: 20px;
@@ -218,16 +217,24 @@
         margin: 0;
         list-style: none;
 
+        & > li:last-child {
+          a {
+            padding-right: 0;
+          }
+        }
+
         li {
           transition: .3s;
           position: relative;
           display: inline-block;
+
 
           /* Change this in order to change the Dropdown symbol */
           & > a {
             &:after {
               content: ' \276F';
               font-size: 12px;
+              margin-left: 10px;
               transform: rotate(90deg);
             }
 

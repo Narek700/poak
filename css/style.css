@@ -197,7 +197,6 @@
       margin-bottom: 0; }
     .header .menu nav a {
       display: flex;
-      gap: 10px;
       align-items: center;
       padding: 0 14px;
       font-size: 20px;
@@ -209,6 +208,8 @@
       padding: 0;
       margin: 0;
       list-style: none; }
+      .header .menu nav ul > li:last-child a {
+        padding-right: 0; }
       .header .menu nav ul li {
         transition: .3s;
         position: relative;
@@ -219,6 +220,7 @@
         .header .menu nav ul li > a:after {
           content: ' \276F';
           font-size: 12px;
+          margin-left: 10px;
           transform: rotate(90deg); }
         .header .menu nav ul li > a:only-child:after {
           content: ''; }
@@ -701,10 +703,11 @@ button:focus, input:focus, .form-control:focus, .btn:focus {
   display: flex;
   justify-content: space-between;
   padding: 50px 0; }
-  .about-info:not(:last-child) {
+  .about-info:not(:last-of-type) {
     border-bottom: 1px solid #A3ACC2; }
   .about-info .img {
-    width: 430px;
+    max-width: 430px;
+    width: 100%;
     height: 290px; }
     .about-info .img img {
       width: 100%;
@@ -981,7 +984,18 @@ button:focus, input:focus, .form-control:focus, .btn:focus {
       right: 20px; }
     .section .slick-arrow.btn-prev {
       right: 80px;
-      left: auto; } }
+      left: auto; }
+  .section-aboutUs {
+    padding-bottom: 0; }
+  .about-info {
+    flex-direction: column;
+    padding: 0 15px 40px; }
+    .about-info .img {
+      order: 0;
+      margin-top: 50px; }
+    .about-info .description {
+      order: 1;
+      width: 100%; } }
 
 @media only screen and (max-width: 767px) {
   .after:after {
@@ -997,6 +1011,8 @@ button:focus, input:focus, .form-control:focus, .btn:focus {
       font-size: 16px;
       line-height: 24px;
       margin-bottom: 10px; }
+    .section .image-info .info .desc {
+      line-height: 24px; }
     .section .image-info .info .date {
       margin-bottom: 10px;
       font-size: 18px;
@@ -1018,6 +1034,8 @@ button:focus, input:focus, .form-control:focus, .btn:focus {
       line-height: 24px; }
     .section .subscribe-form .submit {
       margin-top: 0; }
+  .section-aboutUs {
+    padding-top: 48px; }
   .section-title {
     font-size: 18px;
     line-height: 24px;
