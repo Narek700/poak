@@ -7,6 +7,20 @@ $(document).ready(function () {
         autoplaySpeed: 4000,
         nextArrow: '<button class="btn-next icon-next"></button>',
         prevArrow: '<button class="btn-prev icon-prev"></button>',
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    arrows: false,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                }
+            }
+        ]
     });
 
     $('#carouselImag').slick({
@@ -31,17 +45,19 @@ $(document).ready(function () {
             {
                 breakpoint: 992,
                 settings: {
+                    arrows: true,
                     slidesToShow: 2,
-                    infinite: true,
-                    dots: true
+                    nextArrow: '<button class="btn-next icon-next"></button>',
+                    prevArrow: '<button class="btn-prev icon-prev"></button>',
                 }
             },
             {
                 breakpoint: 768,
                 settings: {
+                    arrows: true,
                     slidesToShow: 1,
-                    infinite: true,
-                    dots: true
+                    nextArrow: '<button class="btn-next icon-next"></button>',
+                    prevArrow: '<button class="btn-prev icon-prev"></button>',
                 }
             }
         ]

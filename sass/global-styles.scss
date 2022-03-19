@@ -670,7 +670,130 @@ button, input, .form-control, .btn {
 }
 
 @media only screen and (max-width: 991px) {
-  .page-head .carousel .slick-list .slick-track .slick-slide .title {
-    padding-top: 118px;
+  .section-title {
+    font-size: 25px;
+    line-height: 33px;
+  }
+
+  .follow-us {
+    padding: 20px 0;
+
+    a {
+      font-size: 30px;
+    }
+
+    span {
+      font-size: 20px;
+      line-height: 30px;
+      margin-right: 30px;
+    }
+  }
+
+  .section {
+    .slick-dots {
+      width: auto;
+      bottom: -55px;
+      left: 17px;
+
+      li {
+        width: 12px;
+        height: 12px;
+        border: 1px solid $blue;
+
+        &.slick-active {
+          width: 12px;
+          height: 12px;
+          background-color: $blue;
+        }
+      }
+    }
+
+    .slick-arrow {
+      color: $blue;
+      font-size: 13px;
+      top: auto;
+      bottom: -67px;
+
+      &.btn-next {
+        right: 20px;
+      }
+
+      &.btn-prev {
+        right: 80px;
+        left: auto;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .after:after {
+    width: 55px;
+    border-top: solid 20px #FFFFFF;
+    border-left: solid 30px transparent;
+    border-right: solid 30px transparent;
+  }
+  .section {
+    padding: 48px 0 100px;
+
+    .second-carousel .slick-slide {
+      padding: 0 12px;
+    }
+
+    .image-info {
+
+      .info {
+        .info-title {
+          font-size: 16px;
+          line-height: 24px;
+          margin-bottom: 10px;
+        }
+
+        .date {
+          margin-bottom: 10px;
+          font-size: 18px;
+          line-height: 24px;
+        }
+      }
+
+      .img {
+        margin-bottom: 30px;
+      }
+    }
+
+    &.gallery {
+      padding-bottom: 48px;
+
+      .image-info .img-title {
+        font-size: 14px;
+        line-height: 19px;
+        text-align: center;
+      }
+    }
+
+    &.form-section {
+      padding-bottom: 48px;
+
+      .section-title {
+        margin-bottom: 50px;
+      }
+    }
+
+    .subscribe-form {
+      .field-control label {
+        font-size: 18px;
+        line-height: 24px;
+      }
+
+      .submit {
+        margin-top: 0;
+      }
+    }
+  }
+  .section-title {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 40px;
+    padding: 0 24px;
   }
 }
