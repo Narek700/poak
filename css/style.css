@@ -721,7 +721,8 @@ button:focus, input:focus, .form-control:focus, .btn:focus {
     width: calc(100% - 430px - 50px); }
 
 .composition-member .member {
-  width: 410px;
+  max-width: 410px;
+  width: 100%;
   height: 530px; }
   .composition-member .member img {
     width: 100%;
@@ -751,7 +752,8 @@ button:focus, input:focus, .form-control:focus, .btn:focus {
     flex-wrap: wrap;
     justify-content: space-between; }
     .composition .members .member {
-      width: 410px;
+      width: 100%;
+      max-width: 410px;
       margin-bottom: 55px;
       display: inline-block;
       color: #333333 !important; }
@@ -947,6 +949,13 @@ button:focus, input:focus, .form-control:focus, .btn:focus {
     color: #A3ACC2;
     font-size: 18px; }
 
+@media only screen and (max-width: 1299px) {
+  .composition .members {
+    gap: 35px;
+    justify-content: center; }
+    .composition .members .member {
+      margin-bottom: 20px; } }
+
 @media only screen and (max-width: 1199px) {
   .third-carousel .image-info {
     max-width: 310px;
@@ -996,7 +1005,15 @@ button:focus, input:focus, .form-control:focus, .btn:focus {
       margin-top: 50px; }
     .about-info .description {
       order: 1;
-      width: 100%; } }
+      width: 100%; }
+  .composition-member .member {
+    width: 100%;
+    max-width: 360px;
+    height: 500px; }
+  .composition-member .member-info {
+    width: calc(100% - 400px); }
+    .composition-member .member-info .name {
+      font-size: 24px; } }
 
 @media only screen and (max-width: 767px) {
   .after:after {
@@ -1041,7 +1058,23 @@ button:focus, input:focus, .form-control:focus, .btn:focus {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 40px;
-    padding: 0 24px; } }
+    padding: 0 24px; }
+  .composition-member {
+    padding-bottom: 48px; }
+    .composition-member .member {
+      height: 440px; }
+    .composition-member .member-info {
+      width: 100%;
+      margin-top: 35px; }
+      .composition-member .member-info .name {
+        font-size: 18px; }
+      .composition-member .member-info .position {
+        margin-bottom: 25px; }
+  .composition {
+    margin-bottom: 48px;
+    padding-bottom: 35px; }
+    .composition .members .member .avatar {
+      margin-bottom: 20px; } }
 
 .footer {
   color: #333333;
