@@ -55,15 +55,33 @@
 
     <div class="menu">
         <div class="head">
+            <!--Mobile-tablet menu button-->
+            <button id="btnMenu" class="btn-menu d-lg-none">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
             <a href="" class="logo">
                 <img src="assets/img/logo_Arm.png" alt="logo">
             </a>
-            <div>
+            <div class="d-none d-lg-block">
                 <h1>«ՀՈՒՄԱՆԻՏԱՐ ԱԿԱՆԱԶԵՐԾՄԱՆ ԵՎ ՓՈՐՁԱԳԻՏԱԿԱՆ ԿԵՆՏՐՈՆ» ՊՈԱԿ</h1>
                 <h2>Ականազերծման գործողությունների ազգային մարմին (ԱԳԱՄ)</h2>
             </div>
+
+            <!--Mobile-tablet for language change-->
+            <div class="language-change d-lg-none">
+                <button id="btnChange" class="btn-change">Հայ</button>
+                <div id="languageMenu" class="language-menu">
+                    <a href="">Eng</a>
+                    <a href="">Рус</a>
+                    <a href="">Fre</a>
+                </div>
+            </div>
         </div>
-        <nav>
+
+        <nav id="nav">
             <ul>
                 <li>
                     <a href="about-us.html">ՄԵՐ ՄԱՍԻՆ</a>

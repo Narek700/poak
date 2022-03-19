@@ -12,28 +12,30 @@
   font-family: 'Noto Sans Armenian', sans-serif;
 }
 
-//---Start ScrollBar Styles
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
+@media only screen and (min-width: 992px) {
+  //---Start ScrollBar Styles
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888888;
-}
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888888;
+  }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555555;
-}
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555555;
+  }
 
-//---End ScrollBar Styles
+  //---End ScrollBar Styles
+}
 
 html, body {
   height: 100%;
@@ -112,6 +114,10 @@ button, input, .form-control, .btn {
 .section {
   position: relative;
   padding: 90px 0 100px;
+
+  .second-carousel .slick-slide {
+    padding: 0 17px;
+  }
 
   .image-info {
     .img {
@@ -653,5 +659,12 @@ button, input, .form-control, .btn {
   .icon-home .icon-home3 {
     color: #A3ACC2;
     font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .third-carousel .image-info {
+    max-width: 310px;
+    width: 100%;
   }
 }

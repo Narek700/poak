@@ -55,15 +55,33 @@
 
     <div class="menu">
         <div class="head">
+            <!--Mobile-tablet menu button-->
+            <button id="btnMenu" class="btn-menu d-lg-none">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
             <a href="" class="logo">
                 <img src="assets/img/logo_Arm.png" alt="logo">
             </a>
-            <div>
+            <div class="d-none d-lg-block">
                 <h1>«ՀՈՒՄԱՆԻՏԱՐ ԱԿԱՆԱԶԵՐԾՄԱՆ ԵՎ ՓՈՐՁԱԳԻՏԱԿԱՆ ԿԵՆՏՐՈՆ» ՊՈԱԿ</h1>
                 <h2>Ականազերծման գործողությունների ազգային մարմին (ԱԳԱՄ)</h2>
             </div>
+
+            <!--Mobile-tablet for language change-->
+            <div class="language-change d-lg-none">
+                <button id="btnChange" class="btn-change">Հայ</button>
+                <div id="languageMenu" class="language-menu">
+                    <a href="">Eng</a>
+                    <a href="">Рус</a>
+                    <a href="">Fre</a>
+                </div>
+            </div>
         </div>
-        <nav>
+
+        <nav id="nav">
             <ul>
                 <li>
                     <a href="about-us.html">ՄԵՐ ՄԱՍԻՆ</a>
@@ -155,8 +173,8 @@
 <section class="section">
     <h2 class="section-title">ՊԱՇՏՈՆԱԿԱՆ ՏԵՂԵԿԱՏՎՈՒԹՅՈՒՆ</h2>
     <div class="container">
-        <div class="row">
-            <div class="col-4">
+        <div class="second-carousel">
+            <div>
                 <a href="" class="image-info">
                     <div class="img">
                         <img src="assets/img/img.png" alt="img">
@@ -173,7 +191,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-4">
+            <div>
                 <a href="" class="image-info">
                     <div class="img">
                         <img src="assets/img/img2.png" alt="img">
@@ -190,7 +208,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-4">
+            <div>
                 <a href="" class="image-info">
                     <div class="img">
                         <img src="assets/img/img3.png" alt="img">
@@ -214,8 +232,8 @@
 <section class="section bg-color after">
     <h2 class="section-title">ՄԻՋԱԶԳԱՅԻՆ ՀԱՄԱԳՈՐԾԱԿՑՈՒԹՅՈՒՆ</h2>
     <div class="container">
-        <div class="row">
-            <div class="col-4">
+        <div class="second-carousel">
+            <div>
                 <a href="" class="image-info">
                     <div class="img">
                         <img src="assets/img/img4.png" alt="img">
@@ -234,7 +252,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-4">
+            <div>
                 <a href="" class="image-info">
                     <div class="img">
                         <img src="assets/img/img5.png" alt="img">
@@ -252,7 +270,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-4">
+            <div>
                 <a href="" class="image-info">
                     <div class="img">
                         <img src="assets/img/img6.png" alt="img">
@@ -274,7 +292,7 @@
 
 <section class="section gallery">
     <h2 class="section-title min">ՏԵՍԱԴԱՐԱՆ</h2>
-    <div class="d-flex">
+    <div id="third" class="third-carousel">
         <a href="" class="image-info">
             <div class="img">
                 <img src="assets/img/img.png" alt="img">
