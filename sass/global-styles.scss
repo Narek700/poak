@@ -668,3 +668,9 @@ button, input, .form-control, .btn {
     width: 100%;
   }
 }
+
+@media only screen and (max-width: 991px) {
+  .page-head .carousel .slick-list .slick-track .slick-slide .title {
+    padding-top: 118px;
+  }
+}
