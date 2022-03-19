@@ -73,13 +73,13 @@ $(document).ready(function () {
     //tablet-mobile language change
     $('#btnChange').on('click', function () {
         $('#languageMenu').toggleClass('active');
-        $('body').toggleClass('overflow-hidden')
     });
 
     //menu toggle for mobile-tablet
     $('#btnMenu').on('click', function () {
         $(this).toggleClass('active');
-        $('#nav').toggleClass('active')
+        $('#nav').toggleClass('active');
+        $('body').toggleClass('overflow-hidden');
     })
 
     //menu links click for mobile-tablet
