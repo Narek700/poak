@@ -7,7 +7,7 @@
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
     "devserver": "live-server",
     "start": "npm-run-all --parallel devserver watch:sass --browser=firefox",
-    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+    "compile:sass": "node-sass sass/main.scss css/style.css",
     "prefix:sass": "postcss css/style.css --use autoprefixer -d css"
   },
   "author": "Narek",
