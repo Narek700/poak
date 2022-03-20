@@ -18,7 +18,7 @@
     width: 50%;
     height: 0;
     border-top: 15px solid $blue;
-    border-right: 20px solid transparent;
+    border-right: 25px solid transparent;
   }
 
 
@@ -31,7 +31,7 @@
     width: 50%;
     height: 0;
     border-top: 15px solid $orange;
-    border-left: 20px solid transparent;
+    border-left: 25px solid transparent;
   }
 
   .hot-line {
@@ -78,7 +78,7 @@
 
       .soc {
         display: flex;
-        gap: 10px;
+        gap: 15px;
         padding-right: 25px;
         font-size: 20px;
         line-height: 0;
