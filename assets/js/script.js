@@ -36,7 +36,7 @@ $(document).ready(function () {
     });
 
     $('.second-carousel').slick({
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 300,
         slidesToShow: 3,
@@ -45,6 +45,7 @@ $(document).ready(function () {
             {
                 breakpoint: 992,
                 settings: {
+                    dots: true,
                     arrows: true,
                     slidesToShow: 2,
                     nextArrow: '<button class="btn-next icon-next"></button>',
@@ -54,6 +55,7 @@ $(document).ready(function () {
             {
                 breakpoint: 768,
                 settings: {
+                    dots: true,
                     arrows: true,
                     slidesToShow: 1,
                     nextArrow: '<button class="btn-next icon-next"></button>',
