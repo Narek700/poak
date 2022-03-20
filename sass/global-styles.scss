@@ -12,31 +12,6 @@
   font-family: 'Noto Sans Armenian', sans-serif;
 }
 
-@media only screen and (min-width: 992px) {
-  //---Start ScrollBar Styles
-  /* width */
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
-
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1;
-  }
-
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #888888;
-  }
-
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555555;
-  }
-
-  //---End ScrollBar Styles
-}
-
 html, body {
   height: 100%;
   font-size: 16px;
@@ -283,6 +258,33 @@ button, input, .form-control, .btn {
       &:hover {
         opacity: .8;
       }
+    }
+  }
+}
+
+.vacancies {
+  .subtitle {
+    color: $blue;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 33px;
+    margin-bottom: 55px;
+  }
+
+  .item {
+    &:not(:last-child) {
+      margin-bottom: 45px;
+    }
+
+    .item-title {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 28px;
+    }
+
+    .desc {
+      font-size: 16px;
+      line-height: 28px;
     }
   }
 }
@@ -649,6 +651,8 @@ button, input, .form-control, .btn {
   margin-bottom: -40px;
   font-size: 12px;
   line-height: 20px;
+  position: relative;
+  z-index: 99;
 
   a {
     color: $primary-color !important;
@@ -662,8 +666,73 @@ button, input, .form-control, .btn {
 
   .icon-home .icon-home3 {
     color: #A3ACC2;
-    font-size: 18px;
+    font-size: 20px;
   }
+}
+
+.form__element {
+  position: relative;
+  margin-top: 33px;
+
+  input, label {
+    margin-bottom: 0 !important;
+  }
+
+  .form__input-upload {
+    position: absolute;
+    visibility: hidden;
+  }
+
+  .form__input {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    font-size: 20px;
+    line-height: 27px;
+
+    i {
+      color: $orange;
+      font-size: 26px;
+      margin-right: 7px;
+      display: inline-block;
+      transform: rotate(40deg);
+    }
+  }
+
+  .form__uploader {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  //---Start ScrollBar Styles
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888888;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555555;
+  }
+
+  //---End ScrollBar Styles
 }
 
 @media only screen and (max-width: 1299px) {
@@ -806,6 +875,18 @@ button, input, .form-control, .btn {
       width: 100%;
       padding-top: 0;
       margin-bottom: 48px;
+    }
+  }
+
+  .vacancies {
+    .item:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      line-height: 28px;
+      margin-bottom: 25px;
     }
   }
 }
@@ -988,5 +1069,9 @@ button, input, .form-control, .btn {
         flex-direction: column;
       }
     }
+  }
+
+  .vacancies {
+    padding-bottom: 48px;
   }
 }

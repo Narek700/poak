@@ -104,4 +104,8 @@ $(document).ready(function () {
     // $('#nav a').on('click', function (e) {
     //     e.preventDefault();
     // });
+
+    $('.form__input-upload[type=file]').change(function () {
+        $('#fileName').html($(this).val());
+    });
 });
