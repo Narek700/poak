@@ -686,6 +686,7 @@ button, input, .form-control, .btn {
   .form__input {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 15px;
     width: 100%;
     font-size: 20px;
@@ -1073,5 +1074,13 @@ button, input, .form-control, .btn {
 
   .vacancies {
     padding-bottom: 48px;
+  }
+
+  .form__element .form__input {
+    font-size: 16px;
+
+    i {
+      font-size: 23px;
+    }
   }
 }
