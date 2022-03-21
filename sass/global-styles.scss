@@ -91,6 +91,26 @@ button, input, .form-control, .btn {
   font-size: 20px;
 }
 
+.time-date {
+  color: #A3ACC2;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.announced {
+  font-size: 16px;
+  line-height: 24px;
+  color: #A3ACC2;
+}
+
+.subtitle {
+  color: $blue;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 33px;
+  margin-bottom: 55px;
+}
+
 .section {
   position: relative;
   padding: 90px 0 100px;
@@ -290,12 +310,58 @@ button, input, .form-control, .btn {
   }
 }
 
-.subtitle {
-  color: $blue;
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 33px;
-  margin-bottom: 55px;
+.the-media {
+  .container {
+    max-width: 1160px;
+  }
+
+  .subtitle {
+    margin-bottom: 16px;
+  }
+
+  .media-item {
+    padding: 38px 0;
+    border-top: 1px solid $border-color;
+
+    &:last-child {
+      border-bottom: 1px solid $border-color;
+    }
+  }
+}
+
+.procurement {
+  .container {
+    max-width: 1160px;
+  }
+
+  .subtitle {
+    max-width: 850px;
+    margin-bottom: 16px;
+  }
+
+  .media-item {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 38px 0;
+    border-top: 1px solid $border-color;
+
+    &:last-child {
+      border-bottom: 1px solid $border-color;
+    }
+  }
+
+  .see-more {
+    padding: 8px 40px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: .54px;
+    color: $white;
+    border-radius: $radius;
+    background-color: $blue;
+  }
 }
 
 .news-items {
@@ -955,6 +1021,10 @@ button, input, .form-control, .btn {
   .news-items .news-item {
     width: calc(50% - 30px);
   }
+
+  .time-date {
+    font-size: 16px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -1180,6 +1250,28 @@ button, input, .form-control, .btn {
       margin-top: 20px;
       margin-bottom: 30px;
     }
+  }
+
+  .the-media {
+    padding-bottom: 48px;
+
+    .media-item {
+      padding: 20px 0;
+    }
+  }
+
+  .procurement .media-item {
+    flex-direction: column;
+    gap: 0;
+    padding: 20px 0;
+
+    .pdf {
+      margin-top: 20px;
+    }
+  }
+
+  .procurement .see-more {
+    margin-top: 20px;
   }
 }
 

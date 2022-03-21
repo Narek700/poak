@@ -577,6 +577,23 @@ button:focus, input:focus, .form-control:focus, .btn:focus {
   color: #F5943E;
   font-size: 20px; }
 
+.time-date {
+  color: #A3ACC2;
+  font-size: 20px;
+  line-height: 24px; }
+
+.announced {
+  font-size: 16px;
+  line-height: 24px;
+  color: #A3ACC2; }
+
+.subtitle {
+  color: #1E477D;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 33px;
+  margin-bottom: 55px; }
+
 .section {
   position: relative;
   padding: 90px 0 100px; }
@@ -699,12 +716,44 @@ button:focus, input:focus, .form-control:focus, .btn:focus {
   font-size: 16px;
   line-height: 28px; }
 
-.subtitle {
-  color: #1E477D;
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 33px;
-  margin-bottom: 55px; }
+.the-media .container {
+  max-width: 1160px; }
+
+.the-media .subtitle {
+  margin-bottom: 16px; }
+
+.the-media .media-item {
+  padding: 38px 0;
+  border-top: 1px solid #A3ACC2; }
+  .the-media .media-item:last-child {
+    border-bottom: 1px solid #A3ACC2; }
+
+.procurement .container {
+  max-width: 1160px; }
+
+.procurement .subtitle {
+  max-width: 850px;
+  margin-bottom: 16px; }
+
+.procurement .media-item {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 38px 0;
+  border-top: 1px solid #A3ACC2; }
+  .procurement .media-item:last-child {
+    border-bottom: 1px solid #A3ACC2; }
+
+.procurement .see-more {
+  padding: 8px 40px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: .54px;
+  color: #FFFFFF;
+  border-radius: 6px;
+  background-color: #1E477D; }
 
 .news-items {
   display: flex;
@@ -1132,7 +1181,9 @@ button:focus, input:focus, .form-control:focus, .btn:focus {
     line-height: 28px;
     margin-bottom: 25px; }
   .news-items .news-item {
-    width: calc(50% - 30px); } }
+    width: calc(50% - 30px); }
+  .time-date {
+    font-size: 16px; } }
 
 @media only screen and (max-width: 767px) {
   .after:after {
@@ -1251,7 +1302,19 @@ button:focus, input:focus, .form-control:focus, .btn:focus {
     .news-detail .video {
       height: 450px;
       margin-top: 20px;
-      margin-bottom: 30px; } }
+      margin-bottom: 30px; }
+  .the-media {
+    padding-bottom: 48px; }
+    .the-media .media-item {
+      padding: 20px 0; }
+  .procurement .media-item {
+    flex-direction: column;
+    gap: 0;
+    padding: 20px 0; }
+    .procurement .media-item .pdf {
+      margin-top: 20px; }
+  .procurement .see-more {
+    margin-top: 20px; } }
 
 @media only screen and (max-width: 575px) {
   .news .news-items {
