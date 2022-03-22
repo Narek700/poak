@@ -260,7 +260,7 @@
           ul {
             display: none;
             position: absolute;
-            top: 56px; /* the height of the main nav */
+            top: 58px; /* the height of the main nav */
             left: 0;
             min-width: 100%;
 
@@ -273,7 +273,7 @@
               /* Second, Third and more Tiers	*/
               ul li {
                 position: relative;
-                top: -56px;
+                top: -58px;
                 left: 100%;
                 background-color: $white;
                 width: 95%;
