@@ -4,7 +4,7 @@
 
   & > .container {
     padding: 40px 15px;
-    max-width: 1230px;
+    max-width: 1370px;
   }
 
   a {
@@ -74,6 +74,14 @@
   }
 }
 
+@media only screen and (min-width: 1920px) {
+  .footer {
+    & > .container {
+      max-width: 1205px;
+    }
+  }
+}
+
 @media only screen and (max-width: 1399px) {
   .footer {
     .item {
@@ -135,7 +143,7 @@
 
 @media only screen and (max-width: 991px) {
   .footer {
-    .container{
+    .container {
       padding: 35px 24px 45px;
     }
 

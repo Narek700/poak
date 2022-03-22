@@ -1346,7 +1346,7 @@ button:focus, input:focus, .form-control:focus, .btn:focus {
   background-color: #F2F2F2; }
   .footer > .container {
     padding: 40px 15px;
-    max-width: 1230px; }
+    max-width: 1370px; }
   .footer a {
     color: #333333 !important; }
   .footer .logo {
@@ -1385,6 +1385,10 @@ button:focus, input:focus, .form-control:focus, .btn:focus {
     line-height: 20px;
     text-align: center;
     background-color: #1E477D; }
+
+@media only screen and (min-width: 1920px) {
+  .footer > .container {
+    max-width: 1205px; } }
 
 @media only screen and (max-width: 1399px) {
   .footer .item:not(:last-child) {
