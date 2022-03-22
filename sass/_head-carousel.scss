@@ -1,6 +1,10 @@
 .page-head {
   min-height: 100%;
 
+  .container {
+    max-width: 1205px;
+  }
+
   .carousel {
     min-height: 100vh;
 
@@ -28,7 +32,7 @@
             color: $white;
             line-height: 70px;
             height: 100vh;
-            padding-top: 80px;
+            padding-top: 180px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -36,7 +40,7 @@
 
             h2 {
               opacity: .5;
-              font-size: 48px;
+              font-size: 42px;
               font-weight: 800;
               transition: .6s transform;
               transform: translateY(55px);
@@ -44,7 +48,7 @@
 
             h3 {
               opacity: .5;
-              font-size: 48px;
+              font-size: 42px;
               font-weight: 500;
               transition: 1.2s transform;
               transform: translateY(50px);
@@ -84,12 +88,14 @@
     right: 60px;
     color: #EBEBEB;
     font-size: 35px;
+    opacity: .7;
   }
 
   &.btn-prev {
     left: 60px;
     color: #EBEBEB;
     font-size: 35px;
+    opacity: .7;
   }
 }
 
@@ -125,8 +131,21 @@
   }
 }
 
+@media only screen and (max-width: 1299px) {
+  .slick-arrow {
+    &.btn-prev {
+      left: 30px;
+    }
+
+    &.btn-next {
+      right: 30px;
+    }
+  }
+}
+
 @media only screen and (max-width: 1199px) {
   .page-head .carousel .slick-list .slick-track .slick-slide .title {
+    padding-top: 270px;
     h2 {
       font-size: 40px;
     }
