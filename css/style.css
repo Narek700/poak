@@ -212,16 +212,21 @@
         transition: .3s;
         position: relative;
         display: inline-block;
+        width: calc(100% / 5);
         /* Change this in order to change the Dropdown symbol */
         /* Display Dropdowns on Hover */
         /* Hide Dropdowns by Default */ }
-        .header .menu nav ul li > a:after {
-          content: ' \276F';
-          font-size: 12px;
-          margin-left: 10px;
-          transform: rotate(90deg); }
-        .header .menu nav ul li > a:only-child:after {
-          content: ''; }
+        .header .menu nav ul li > a {
+          display: block;
+          width: 100%;
+          text-align: center; }
+          .header .menu nav ul li > a:after {
+            content: ' \276F';
+            font-size: 12px;
+            margin-left: 10px;
+            transform: rotate(90deg); }
+          .header .menu nav ul li > a:only-child:after {
+            content: ''; }
         .header .menu nav ul li:hover > ul {
           display: inherit; }
         .header .menu nav ul li ul {
@@ -251,7 +256,8 @@
                 color: #FFFFFF !important; }
             .header .menu nav ul li ul li a {
               background-color: #FFFFFF;
-              color: #1E477D !important; }
+              color: #1E477D !important;
+              text-align: left; }
               .header .menu nav ul li ul li a:after {
                 transform: rotate(0deg); }
     .header .menu nav > ul {
@@ -366,12 +372,14 @@
           flex-direction: column;
           background-color: #FFFFFF; }
           .header .menu nav > ul li {
+            width: 100%;
             border-top: 1px solid #A3ACC2; }
             .header .menu nav > ul li a {
               font-size: 14px;
               line-height: 19px;
               color: #1E477D !important;
-              padding: 20px 40px; }
+              padding: 20px 40px;
+              text-align: left; }
             .header .menu nav > ul li ul {
               position: static; }
               .header .menu nav > ul li ul li:not(:last-child) {
