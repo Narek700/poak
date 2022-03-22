@@ -883,7 +883,7 @@ button:focus, input:focus, .form-control:focus, .btn:focus {
 
 .follow-us {
   color: #FFFFFF;
-  padding: 40px 0;
+  padding: 25px 0;
   background-color: #F5943E; }
   .follow-us span {
     font-size: 24px;
@@ -891,7 +891,7 @@ button:focus, input:focus, .form-control:focus, .btn:focus {
     line-height: 33px;
     margin-right: 35px; }
   .follow-us a {
-    font-size: 42px; }
+    font-size: 38px; }
     .follow-us a:not(:last-child) {
       margin-right: 20px; }
 
@@ -1345,8 +1345,8 @@ button:focus, input:focus, .form-control:focus, .btn:focus {
   color: #333333;
   background-color: #F2F2F2; }
   .footer > .container {
-    padding: 75px 15px;
-    max-width: 1370px; }
+    padding: 40px 15px;
+    max-width: 1230px; }
   .footer a {
     color: #333333 !important; }
   .footer .logo {
