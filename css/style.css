@@ -1066,7 +1066,7 @@ button:focus, input:focus, .form-control:focus, .btn:focus {
   align-items: center;
   margin-top: 30px;
   margin-bottom: -40px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 20px;
   position: relative;
   z-index: 99; }
