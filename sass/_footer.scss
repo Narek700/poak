@@ -4,7 +4,7 @@
 
   & > .container {
     padding: 40px 15px;
-    max-width: 1370px;
+    max-width: 1205px;
   }
 
   a {
@@ -71,14 +71,6 @@
     line-height: 20px;
     text-align: center;
     background-color: $blue;
-  }
-}
-
-@media only screen and (min-width: 1920px) {
-  .footer {
-    & > .container {
-      max-width: 1205px;
-    }
   }
 }
 
