@@ -146,6 +146,7 @@
 @media only screen and (max-width: 1199px) {
   .page-head .carousel .slick-list .slick-track .slick-slide .title {
     padding-top: 270px;
+
     h2 {
       font-size: 40px;
     }
@@ -158,7 +159,7 @@
 
 @media only screen and (max-width: 991px) {
   .page-head .carousel .slick-list .slick-track .slick-slide .title {
-    padding-top: 118px;
+    padding-top: 200px;
 
     h2 {
       font-size: 33px;
@@ -171,9 +172,43 @@
 }
 
 @media only screen and (max-width: 767px) {
+  .container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
   .page-head .carousel .slick-list .slick-track .slick-slide .title {
     h2, h3 {
       font-size: 18px;
+    }
+  }
+
+  .page-head {
+    min-height: auto;
+
+    .carousel {
+      min-height: 400px;
+
+      .slick-list {
+        min-height: 400px;
+
+        .slick-track {
+          min-height: 400px;
+
+          .slick-slide {
+            min-height: 400px;
+
+            .img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+
+            .title {
+              height: auto;
+            }
+          }
+        }
+      }
     }
   }
 }
